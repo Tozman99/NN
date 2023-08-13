@@ -15,7 +15,18 @@ int main(void){
 
     ptr = init(ptr, 10);
    //insertElement(&ptr, 3, 5);
-    readArray(ptr);
+    int index = 0;
+
+    while (index < 10){
+        float *pt;
+        pt = ptr + index;
+        if (index == 4){
+            insertElement(pt, index, 5.0f);
+        }      
+        readArray(pt, index);
+
+        index++;
+    }
 
     // a = matrixCreation(a, 5, 5);
     // readMatrix(a);

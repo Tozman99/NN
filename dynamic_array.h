@@ -8,7 +8,7 @@ typedef struct {
 } Array_t;
 
 Array_t *init(Array_t *ptr, size_t size);
-void readArray(Array_t *ptr);
+void readArray(float *pt, int index);
 void resize(Array_t *ptr);
 void freeArray(Array_t *ptr);
-void insertElement(Array_t *ptr, int index, float element);
+void insertElement(float *pt, int index, float element);
